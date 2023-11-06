@@ -1,2 +1,3 @@
-app.py
 .ipynb_checkpoints
+*.sav
+TFM-Copy1.ipynb
