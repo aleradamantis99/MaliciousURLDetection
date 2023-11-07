@@ -23,8 +23,8 @@ def load_model(path, pathMC):
         return model, modelMC
     except Exception as e:
         st.sidebar.error(f"Error loading the model: {str(e)}")
-model_path = st.sidebar.text_input("Enter Model Path:", value="./model.sav")
-model_mc_path = st.sidebar.text_input("Enter Multiclass Model Path:", value="./modelMC.sav")
+model_path = st.sidebar.text_input("Enter Model Path:", value="../model.sav")
+model_mc_path = st.sidebar.text_input("Enter Multiclass Model Path:", value="../modelMC.sav")
 
 model, modelMC = load_model(model_path, model_mc_path)
 
